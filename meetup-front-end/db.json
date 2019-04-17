@@ -55,6 +55,14 @@
       "shirt": "XL",
       "skillLevel": "expert",
       "id": 7
+    },
+    {
+      "firstName": "panko",
+      "lastName": "CORGII",
+      "email": "yaay",
+      "shirt": "L",
+      "skillLevel": "intermediate",
+      "id": 8
     }
   ]
 }

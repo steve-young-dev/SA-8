@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import Form from './Form.jsx';
+import CurrentAttendees from './currentAttendees.jsx';
 
 class App extends React.Component {
   // YOUR CODE HERE
@@ -61,7 +62,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <Form state={this.state.attendee} onChange={this.formChange} onSubmit={this.formSubmit}></Form>
+      <div className="main">
+        <CurrentAttendees state={this.state.roster}></CurrentAttendees>
+        <Form state={this.state.attendee} onChange={this.formChange} onSubmit={this.formSubmit}></Form>
+      </div>
     )
 
   }
