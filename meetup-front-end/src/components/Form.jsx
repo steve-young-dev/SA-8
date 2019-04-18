@@ -30,7 +30,8 @@ function Form(props) {
           <option value="expert">Expert</option>
         </select>
       </label>
-      <button onClick={props.onSubmit}>REGISTER</button>
+      <button onClick={props.onSubmit}>{props.updating ? 'UPDATE' : 'REGISTER'}</button>
+      {props.updating ? <button onClick={props.delete}>DELETE</button> : ''}
     </div>
   )
 }
